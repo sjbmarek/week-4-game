@@ -2,7 +2,7 @@
 
 
 
-var gems = {
+var Gems = {
 	gempic: [
 		"assets/images/Gem1.png", 
 		"assets/images/Gem3.png",
@@ -13,14 +13,33 @@ var gems = {
 		(Math.floor(Math.random() * 12) + 1),
 		(Math.floor(Math.random() * 12) + 1),
 		(Math.floor(Math.random() * 12) + 1)]
-}
+
+
+};
+
+
+// //inside object set
+// 		value: [0,0,0,0],
+// 		//define method
+
+// 		price: function () {
+// 			(Math.floor(Math.random() * 12) + 1);
+
+// 		},
+// // this is an independant function
+// 		function price() {
+// 			(Math.floor(Math.random() * 12) + 1);
+
+// 		}
+
+
 
 
 var targetNumber = (Math.floor(Math.random() * 101) + 19);
 // Adds the target value to the target div
 $(".target").text(targetNumber);
-console.log("gempic: " + gems.gempic);
-console.log("value:" + gems.value);
+console.log("gempic: " + Gems.gempic);
+console.log("value:" + Gems.value);
 console.log("target number: " + targetNumber);
 
   var counter = 0;
@@ -31,8 +50,8 @@ console.log("target number: " + targetNumber);
     // Create an imageCrystal html element, add classes, add attributes
     var imageCrystal = $("<img>");
     imageCrystal.addClass("crystalsize");
-    imageCrystal.attr("src", gems.gempic[i]);
-    imageCrystal.attr("data-crystalvalue", gems.value[i]);
+    imageCrystal.attr("src", Gems.gempic[i]);
+    imageCrystal.attr("data-crystalvalue", Gems.value[i]);
 
     // Add the crystal to the page.
     $(".crystals").append(imageCrystal);
@@ -71,3 +90,24 @@ console.log("target number: " + targetNumber);
 
   // });
 
+// defining the function
+var marek = 63;
+function susan(a,b) 
+{
+
+idx===a++;
+b--;
+var car = a+b;
+}
+
+susan(marek,3);
+
+
+
+
+// getter and setter
+// js only
+// cars.forEach(function(el,i){console.log('element: ',el,',index',i})
+
+//jQuery for loop is .each
+// notes:   $.each(Array, function(idx,elmt){console.log('element: ', elmt, ',index: ', idx)});
