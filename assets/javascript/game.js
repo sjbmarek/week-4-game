@@ -23,9 +23,9 @@ console.log("gempic: " + gems.gempic);
 console.log("value:" + gems.value);
 console.log("target number: " + targetNumber);
 
-  // var counter = 0;
+  var counter = 0;
 
-  // Next we create a for loop to create crystals with unigue values.
+  // Next we create a for loop to create crystals with unique values.
   for (var i = 0; i < 4; i++) {
 
     // Create an imageCrystal html element, add classes, add attributes
@@ -38,30 +38,36 @@ console.log("target number: " + targetNumber);
     $(".crystals").append(imageCrystal);
   }
 
-  // // This time, our click event applies to every single crystal on the page. Not just one.
-  // $(".crystal-image").on("click", function() {
+    // Click event applies to every crystal on the page.
+  // $(".crystals").on("click", function() {
 
-  //   // Determining the crystal's value requires us to extract the value from the data attribute.
-  //   // Using the $(this) keyword specifies that we should be extracting the crystal value of the clicked crystal.
-  //   // Using the .attr("data-crystalvalue") allows us to grab the value out of the "data-crystalvalue" attribute.
-  //   // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
+    // Determining the crystal's value requires us to extract the value from the data attribute.
+    // Using the $(this) keyword specifies that we should be extracting the crystal value of the clicked crystal.
+    // Using the .attr("data-crystalvalue") allows us to grab the value out of the "data-crystalvalue" attribute.
+    // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
     
-  //   var crystalValue = ($(this).attr("data-crystalvalue"));
-  //   crystalValue = parseInt(crystalValue);
-  //   // We then add the crystalValue to the user's "counter" which is a global variable.
-  //   // Every click, from every crystal adds to the global counter.
-  //   counter += crystalValue;
+    // var crystalValue = ($(this).attr("data-crystalvalue"));
+    // crystalValue = parseInt(crystalValue);
+    // We then add the crystalValue to the user's "counter" which is a global variable.
+    // Every click, from every crystal adds to the global counter.
+    // counter += crystalValue;
 
   //   // All of the same game win-lose logic applies. So the rest remains unchanged.
-  //   alert("New score: " + counter);
+    // alert("New score: " + counter);
 
   //   if (counter === targetNumber) {
-  //     alert("You win!");
-  //   }
+  		// alert("Winner");
 
-  //   else if (counter >= targetNumber) {
-  //     alert("You lose!!");
-  //   }
+  //     wins++;
+  // 		$(".target").text(wins);
+  // 		// Choose new target and gem values,reset counter
+  // //   }
+
+  // //   else if (counter >= targetNumber) {
+  // //     alert("You lose!!");
+  // 		losses++;
+  // 		$(".target").text(losses);
+  // //   }
 
   // });
 

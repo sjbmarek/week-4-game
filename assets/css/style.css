@@ -1,12 +1,13 @@
   	
-.crystalsize = {
-			height:103px;
-			width: 103px;
+.crystalsize  {
+			height:90px;
+			width: 90px;
 			border-style: solid;
 			border-color: black;
+			margin: 2px;
 	}
-
-h1 = {
+/*
+h1 {
 	background-color: yellow;
 	color: red;
-	}
+	}*/
