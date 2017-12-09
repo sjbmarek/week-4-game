@@ -8,24 +8,24 @@ var Gems = {
 		"assets/images/Gem3.png",
 		"assets/images/Gem4.png",
 		"assets/images/Gem5.png"],
-	value: [
-		(Math.floor(Math.random() * 12) + 1),
-		(Math.floor(Math.random() * 12) + 1),
-		(Math.floor(Math.random() * 12) + 1),
-		(Math.floor(Math.random() * 12) + 1)]
+	// value: [
+	// 	(Math.floor(Math.random() * 12) + 1),
+	// 	(Math.floor(Math.random() * 12) + 1),
+	// 	(Math.floor(Math.random() * 12) + 1),
+	// 	(Math.floor(Math.random() * 12) + 1)]
 
+	value: [0,0,0,0],
+	//define method
+	changeValues: function () {
+		for (var i = 0; i < this.value.length; i++) {
+			this.value[i]=(Math.floor(Math.random() * 12) + 1);
+		};
+	},
 
 };
 
 
-// //inside object set
-// 		value: [0,0,0,0],
-// 		//define method
 
-// 		price: function () {
-// 			(Math.floor(Math.random() * 12) + 1);
-
-// 		},
 // // this is an independant function
 // 		function price() {
 // 			(Math.floor(Math.random() * 12) + 1);
@@ -43,6 +43,7 @@ console.log("value:" + Gems.value);
 console.log("target number: " + targetNumber);
 
   var counter = 0;
+  Gems.changeValues();
 
   // Next we create a for loop to create crystals with unique values.
   for (var i = 0; i < 4; i++) {
@@ -91,16 +92,16 @@ console.log("target number: " + targetNumber);
   // });
 
 // defining the function
-var marek = 63;
-function susan(a,b) 
-{
+// var marek = 63;
+// function susan(a,b) 
+// {
 
-idx===a++;
-b--;
-var car = a+b;
-}
+// idx===a++;
+// b--;
+// var car = a+b;
+// }
 
-susan(marek,3);
+// susan(marek,3);
 
 
 
