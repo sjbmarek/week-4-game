@@ -5,8 +5,8 @@
 var gems = {
 	gempic: [
 		"assets/images/Gem1.png", 
-		"assets/images/Gem2.png",
 		"assets/images/Gem3.png",
+		"assets/images/Gem4.png",
 		"assets/images/Gem5.png"],
 	value: [
 		(Math.floor(Math.random() * 12) + 1),
@@ -19,8 +19,8 @@ var gems = {
 var targetNumber = (Math.floor(Math.random() * 101) + 19);
 // Adds the target value to the target div
 $(".target").text(targetNumber);
-console.log("gempic: " + gems.gempic[0]);
-console.log("value:" + gems.value[0]);
+console.log("gempic: " + gems.gempic);
+console.log("value:" + gems.value);
 console.log("target number: " + targetNumber);
 
   // var counter = 0;
