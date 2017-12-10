@@ -4,12 +4,13 @@
 			width: 90px;
 			border-style: solid;
 			border-color: gray;
-			margin: 2px;
+			margin: 1px;
 	}
 
 h1 {padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: gray;
 	color: white;
 	}
+
 body {font-size: 20px;}
+
