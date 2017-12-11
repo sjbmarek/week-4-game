@@ -5,6 +5,7 @@
 			border-style: solid;
 			border-color: gray;
 			margin: 1px;
+			z-index: 100;
 }
 
 h1 {

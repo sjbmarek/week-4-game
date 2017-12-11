@@ -1,7 +1,7 @@
 
 
 
-
+$(document).ready(function() {
 var Gems = {
 	gempic: [
 		"assets/images/Gem1.png", 
@@ -21,7 +21,7 @@ var Gems = {
 		for (var i = 0; i < this.gempic.length; i++) {
 
     // Create an imageCrystal html element, add classes, add attributes
-    		var imageCrystal = $("<img>");
+    		imageCrystal = $("<img>");
     		imageCrystal.addClass("crystalsize");
     		imageCrystal.attr("src", this.gempic[i]);
     		imageCrystal.attr("data-crystalvalue", this.value[i]);
@@ -31,11 +31,14 @@ var Gems = {
 
 	},
 
+
 	clearDiv: function() {
 		$(".crystals").empty();
 	}
 };
 
+
+var imageCrystal;
 var wins = 0;
 var losses =0;
 var targetNumber = (Math.floor(Math.random() * 101) + 19);
@@ -51,7 +54,7 @@ console.log("target number: " + targetNumber);
   Gems.addCrystals();
 
     // Click event applies to every crystal on the page.
-  $(".crystalsize").on("click", function() {
+  $(".crystals").on("click", ".crystalsize",function() {
   	console.log("click happened");
 
     // Extract the value from the data attribute.
@@ -65,6 +68,7 @@ console.log("target number: " + targetNumber);
     // Every click, from every crystal adds to the global counter.
     counter += crystalVal;
     $(".score").text(counter);
+
 
 
 
@@ -99,6 +103,8 @@ console.log("target number: " + targetNumber);
   		console.log("value:" + Gems.value);
   		Gems.addCrystals();
     };
+
+  });
 
   });
 
