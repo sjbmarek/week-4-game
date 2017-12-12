@@ -21,8 +21,10 @@ body {font-size: 20px;}
 }
 
 .boxsize {height:350px;
-	background-color: lightgray;
 }
 
 #para {font-size: 18px;
+}
+
+body {background-image: url("../images/greybg.jpg");
 }
