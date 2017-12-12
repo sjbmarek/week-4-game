@@ -42,26 +42,24 @@ update=function() {
 	counter = 0;
 	$(".target").text(targetNumber);
 	$(".score").text(counter);
+	$( "#name" ).fadeOut (0).fadeIn(5000);
+  	$( ".icon" ).fadeOut (0).fadeIn(5000);
+
 };
 
 
 var imageCrystal;
 var wins = 0;
 var losses =0;
-var targetNumber = (Math.floor(Math.random() * 101) + 19);
-// Adds the target value to the target div
-$(".target").text(targetNumber);
-console.log("gempic: " + Gems.gempic);
-console.log("value:" + Gems.value);
-console.log("target number: " + targetNumber);
+var targetNumber;
 
-  var counter = 0;
+//This is the start of the action.
+
+  update();
   Gems.changeValues();
   console.log("value:" + Gems.value);
   Gems.addCrystals();
   
-  $( "#name" ).fadeOut (0).fadeIn(5000);
-  $( ".icon" ).fadeOut (0).fadeIn(5000);
 
     // Click event applies to every crystal on the page, needs element class and div class bound tothe click event.
   $(".crystals").on("click", ".crystalsize",function() {
