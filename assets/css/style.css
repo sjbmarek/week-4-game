@@ -19,3 +19,10 @@ body {font-size: 20px;}
 	height:60px;
 	width:60px;
 }
+
+.boxsize {height:350px;
+	background-color: lightgray;
+}
+
+#para {font-size: 18px;
+}

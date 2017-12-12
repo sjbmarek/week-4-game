@@ -10,7 +10,7 @@ var Gems = {
 		"assets/images/Gem5.png"],
 
 	value: [0,0,0,0],
-	//define method
+	//define methods
 	changeValues: function () {
 		for (var i = 0; i < this.value.length; i++) {
 			this.value[i]=(Math.floor(Math.random() * 12) + 1);
@@ -37,6 +37,13 @@ var Gems = {
 	}
 };
 
+update=function() {
+	targetNumber = (Math.floor(Math.random() * 101) + 19);
+	counter = 0;
+	$(".target").text(targetNumber);
+	$(".score").text(counter);
+};
+
 
 var imageCrystal;
 var wins = 0;
@@ -52,8 +59,11 @@ console.log("target number: " + targetNumber);
   Gems.changeValues();
   console.log("value:" + Gems.value);
   Gems.addCrystals();
+  
+  $( "#name" ).fadeOut (0).fadeIn(5000);
+  $( ".icon" ).fadeOut (0).fadeIn(5000);
 
-    // Click event applies to every crystal on the page.
+    // Click event applies to every crystal on the page, needs element class and div class bound tothe click event.
   $(".crystals").on("click", ".crystalsize",function() {
   	console.log("click happened");
 
@@ -71,33 +81,30 @@ console.log("target number: " + targetNumber);
 
 
 
-
+// WINNER
     if (counter === targetNumber) {
-  		alert("Winner");
+  		
       	wins++;
       	console.log("wins: " + wins);
   		$(".winnumber").text(wins);
+  		alert("Winner");
   		// Choose new target,gem values,reset counter and gem value
-  		targetNumber = (Math.floor(Math.random() * 101) + 19);
-		$(".target").text(targetNumber);
-		counter = 0;
-		$(".score").text(counter);
+		update();
 		Gems.clearDiv();
   		Gems.changeValues();
   		console.log("value:" + Gems.value);
   		Gems.addCrystals();
 
     };
+// LOSER
 
     if (counter >= targetNumber) {
-      	alert("Loser");
+      	
   		losses++;
   		$(".lossnumber").text(losses);
+  		alert("Loser");
   		// Choose new target and gem values,reset counter and gem value
-  		targetNumber = (Math.floor(Math.random() * 101) + 19);
-		$(".target").text(targetNumber);
-		counter = 0;
-		$(".score").text(counter);
+		update();
 		Gems.clearDiv();
   		Gems.changeValues();
   		console.log("value:" + Gems.value);
@@ -110,7 +117,7 @@ console.log("target number: " + targetNumber);
 
 // Notes
 // this is an independant function
-// 		function price() {
+// something = 	function price() {
 // 			(Math.floor(Math.random() * 12) + 1);
 // 		}
 // getter and setter
