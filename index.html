@@ -2,13 +2,14 @@
 <html lang="en-us">
 
 <head <meta charset="UTF-8">
-    <title>crystals game</title>
+	<title>Crystals Game</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="assets/css/reset.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 
 
 
@@ -17,32 +18,31 @@
 <body>
 
 
-<div class="bg-secondary text-center mt-4 mb-5">
-	<img src="assets/images/gemicon.png" class = "icon">
-	<h1 id="name">Crystals Collector</h1>
-</div>
+	<div class="bg-secondary text-center mt-4 mb-5">
+		<img src="assets/images/gemicon.png" class = "icon">
+		<h1 id="name">Crystals Collector</h1>
+	</div>
 
-<div class="container mb-4">
-	<div class="row mb-4"> 
-		
-		<div class="col-md-6 boxsize">
-			<div class="bg-light px-2 py-4 boxsize mb-3" style="border-style: solid; border-color: lightgray">
-				<p id="para">You will be given a random number at the start of the game.</p>
-				<p id="para">There are four crystals.  By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-				<p id="para">The value of each crystal is hidden from you until you click on it.</p>
-				<p id="para">Each time the game starts, the target number and the value of each crystal will be updated.</p>
-				<!-- <br> -->
-				
+	<div class="container mb-4">
+		<div class="row mb-4"> 
+
+			<div class="col-md-6 boxsize mb-3">
+				<div class="bg-light px-2 py-4 boxsize mb-3" style="border-style: solid; border-color: lightgray; border-width: 1px">
+					<p id="para">You will be given a random target number at the start of the game.</p>
+					<p id="para">By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+					<p id="para">The value of each crystal is hidden from you until you click on it.</p>
+					<p id="para">Each time the game starts, the target number and the value of each crystal will be updated.</p>
+
+				</div>
 			</div>
-		</div>
 
-		<div class="col-md-6 boxsize">
+			<div class="col-md-6 boxsize mb-3">
 
 
 				<div class="target text-center" style="font-size: 41px; background-color: #fdbf04a1">
 				</div>
 
-			
+
 
 				<div class ="crystals text-center mt-3 mb-3">
 				</div>
@@ -57,26 +57,26 @@
 				</div>
 				<div class = "container">
 					<div class ="row text-center bg-secondary">
-						<!-- <div class="bg-secondary"> -->
 							<div class="col-md-6 text-center col-sm-6">
-							<p class="my-0"> Wins:</p>
-							<p class="winnumber my-0">0</p>
+								<p class="my-0"> Wins:</p>
+								<p class="winnumber my-0">0</p>
 							</div>
 							<div class="col-md-6 text-center col-sm-6">
-							<p class="my-0">Losses:</p>
-							<p class="lossnumber my-0">0</p>
+								<p class="my-0">Losses:</p>
+								<p class="lossnumber my-0">0</p>
 							</div>
-						<!-- </div> -->
+						</div>
 					</div>
 				</div>
+			</div>
+
 		</div>
-	</div>
 
-</div>
-
-<div class="footer">
-		<p>&copy; Copyright 2107  Susan Marek</p>
-</div>
+	<footer class="footer mt-3">
+		<div class="container footercontainer text-center">
+			<span class="footertext">&copy; Copyright Susan Marek</span>
+		</div>
+	</footer>
 
 
 
