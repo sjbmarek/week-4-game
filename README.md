@@ -25,9 +25,13 @@
 2. Tech features:
 
    * Javascript
-   * Dynamic HTML, attributes
+   * Dynamic HTML, dynamic attributes
    * Objects
    * Functions
+   * CSS animation
+   * Bootstrap
+
+
 
 3. Screenshot
 ![Crystal Collector](/screenshot.PNG)
